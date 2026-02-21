@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM Practice</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .available {
+            color: green;
+        }
+
+        .not-available {
+            color: red;
+        }
+
+        button {
+            margin: 5px 5px 5px 0;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">Мій навчальний сайт</h1>
+
+    <div class="box" id="box">BOX</div>
+
+    <button id="changeTextBtn">Змінити заголовок</button>
+    <button id="toggleBoxBtn">Змінити колір box</button>
+
+    <hr>
+
+    <div class="store">
+        <ul class="js-users"></ul>
+    </div>
+
+    <hr>
+
+    <div class="products-section">
+        <form id="productForm" class="form">
+            <h2>Додати продукт</h2>
+
+            <label>
+                Назва:
+                <input type="text" name="title" required />
+            </label>
+
+            <label>
+                Ціна:
+                <input type="number" name="price" required min="1" />
+            </label>
+
+            <label>
+                В наявності:
+                <input type="checkbox" name="inStock" />
+            </label>
+
+            <button type="submit">Додати</button>
+        </form>
+
+        <div>
+            <button id="showAll">Показати всі</button>
+            <button id="showAvailable">Тільки в наявності</button>
+        </div>
+
+        <!-- Контейнер для карток -->
+        <div class="js-products-list"></div>
+    </div>
+
+<div class="filter-container">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="fruits">Fruits</button>
+    <button class="filter-btn" data-category="vegetables">Vagetables</button>
+    <button class="filter-btn" data-category="drinks">Drinks</button>
+    <button class="filter-btn" data-category="snacks">Snacks</button>
+</div>
+
+<button id="btn">Click me</button>
+
+
+<p id="text">Hello</p>
+<button id="change">Change text</button>
+
+
+
+<input type="text" id="input">
+<p id="output"></p>
+
+
+<div class="boxx" id="boxi">Box</div>
+
+<ul id="list">
+    <li data-name="name-1">Item 1</li>
+    <li data-name="name-2">Item 2</li>
+    <li data-name="name-3"="">Item 3</li>
+</ul>
+
+
+<div class="backdrop">
+    <div class="modal">
+        <button class="close">X</button>
+        <p>Modal content</p>
+    </div>
+</div>
+
+
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/destr.js"></script>
+</body>
+
+
+
+</html>

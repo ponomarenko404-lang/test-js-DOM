@@ -1,0 +1,190 @@
+.users-card-box {
+width: 250px;
+border-radius: 8px;
+background-color: antiquewhite;
+}
+
+.adult {
+    color: red;
+}
+
+.young {
+    color: aquamarine;
+}
+
+.test-store {
+    display: flex;
+    /* width: 700px; */
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 8 4;
+    border-radius: 8px;
+    width: 250px;
+    background-color: rgba(159, 190, 180, 0.107);
+}
+.store-box {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+/* form */
+.form {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form input[type="text"]:focus,
+.form input[type="number"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+.form input[type="checkbox"] {
+    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+.form button:active {
+    transform: scale(0.98);
+}
+/* form */
+
+.filter-container {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.filter-btn.active {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+}
+
+.js-products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+#boxi {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+.activee {
+    background-color: red;
+}
+
+/* backdrop — затемнений фон */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms ease;
+}
+
+/* прихований стан */
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* модальне вікно */
+.modal {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    min-width: 300px;
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* кнопка закриття */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
